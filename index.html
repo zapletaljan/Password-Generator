@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <div class="card">
+        <div class="card-header">
+            <button class="btn" id="theme-switch-btn"><i class="fa-solid fa-moon"></i></button>
+            <h1>Password Generator</h1>
+        </div>
+
+        <div class="card-options">
+
+            <div class="options-l">
+                <h3>Password length</h3>
+                <div class="card-input">
+                    <input id="password-length-input" type="number" min="8" max="100" placeholder="e.g. 12">
+                    <button class="btn" id="help-length-btn"><i class="fa-solid fa-question"></i><p>Set the length of your password (8-100).</p></button>
+                </div>
+                <h3>Allow uppercase?</h3>
+                <div class="card-input">
+                    <input class="checkbox" id="allow-uppercase-checkbox" type="checkbox">
+                    <button class="btn" id="help-upper-btn"><i class="fa-solid fa-question"></i><p>Tick to include uppercase letters.</p></button>
+                </div>
+                <h3>Allow lowercase?</h3>
+                <div class="card-input">
+                    <input class="checkbox" id="allow-lowercase-checkbox" type="checkbox">
+                    <button class="btn" id="help-lower-btn"><i class="fa-solid fa-question"></i><p>Tick to include lowercase letters.</p></button>
+                </div>
+                <h3>Allow symbols?</h3>
+                <div class="card-input">
+                    <input class="checkbox" id="allow-symbols-checkbox" type="checkbox">
+                    <button class="btn" id="help-symbols-btn"><i class="fa-solid fa-question"></i><p>Tick to include symbols (#@?$).</p></button>
+                </div>
+            </div>
+
+            <div class="options-r">
+
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

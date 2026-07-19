@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #111;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Poppins, sans-serif, system-ui;
+}
+
+.card {
+    gap: 10px;
+    padding: 10px;
+    background-color: #1d1d1d;
+    border: 1px solid;
+    border-color: gray;
+    height: 75%;
+    width: 50%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+
+    i {
+        scale: 1.75;
+        color: #ffffff;
+    }
+
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    height: fit-content;
+
+}
+
+.card-options {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    padding: 50px;
+}
+
+.card-input {
+    margin-bottom: 20px;
+    align-items: center;
+    display: flex;
+    gap: 10px;
+}
+
+.checkbox {
+    width: 20px;
+    height: 20px;
+}
+
+.options-l {
+    width: 50%;
+    height: 100px;
+
+}
+
+.options-r {
+    width: 50%;
+    height: 100px;
+    background-color: rgb(0, 255, 21);
+}
+
+#password-length-input {
+    width: fit-content;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    border: 1px solid;
+    border-color: gray;
+    padding: 5px;
+    color: #000000;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(19, 19, 19);
+    border-radius: 50px;
+    border: 1px solid;
+    border-color: gray;
+    width: 40px;
+    height: 40px;
+}
+
+#theme-switch-btn {
+    left: 0;
+    position: absolute;
+}
+
+#help-length-btn,
+#help-lower-btn,
+#help-upper-btn,
+#help-symbols-btn {
+    width: 25px;
+    height: 25px;
+
+    i {
+        scale: 1.2;
+    }
+       p {
+        display: none;
+    }
+}
+
+#help-length-btn:hover, #help-lower-btn:hover, #help-upper-btn:hover, #help-symbols-btn:hover {
+    min-height: 25px;
+    width: fit-content;
+    color: #fff;
+
+    p {
+        padding: 5px;
+        display: inline;
+    }
+    i {
+        display: none;
+    }
+}
