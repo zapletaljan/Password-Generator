@@ -31,32 +31,56 @@
         <div class="card-options">
 
             <div class="options-l">
-                <h3>Password length</h3>
+                <h3>Password length <span> Min. 12 recommended</span></h3>
                 <div class="card-input">
-                    <input id="password-length-input" type="number" min="8" max="100" placeholder="e.g. 12">
-                    <button class="btn" id="help-length-btn"><i class="fa-solid fa-question"></i><p>Set the length of your password (8-100).</p></button>
+                    <input id="password-length-input" type="number" min="8" max="64" value="12">
+                    <button class="btn" id="help-length-btn"><i class="fa-solid fa-question"></i>
+                        <p>Set the length of your password (8-64).</p>
+                    </button>
                 </div>
-                <h3>Allow uppercase?</h3>
+                <h3>Uppercase letters<span> Recommended</span></h3>
                 <div class="card-input">
                     <input class="checkbox" id="allow-uppercase-checkbox" type="checkbox">
-                    <button class="btn" id="help-upper-btn"><i class="fa-solid fa-question"></i><p>Tick to include uppercase letters.</p></button>
+                    <button class="btn" id="help-upper-btn"><i class="fa-solid fa-question"></i>
+                        <p>Tick to include uppercase letters.</p>
+                    </button>
                 </div>
-                <h3>Allow lowercase?</h3>
+                <h3>Lowercase letters<span> Recommended</span></h3>
                 <div class="card-input">
                     <input class="checkbox" id="allow-lowercase-checkbox" type="checkbox">
-                    <button class="btn" id="help-lower-btn"><i class="fa-solid fa-question"></i><p>Tick to include lowercase letters.</p></button>
+                    <button class="btn" id="help-lower-btn"><i class="fa-solid fa-question"></i>
+                        <p>Tick to include lowercase letters.</p>
+                    </button>
                 </div>
-                <h3>Allow symbols?</h3>
+                <h3>Symbols<span> Recommended</span></h3>
                 <div class="card-input">
                     <input class="checkbox" id="allow-symbols-checkbox" type="checkbox">
-                    <button class="btn" id="help-symbols-btn"><i class="fa-solid fa-question"></i><p>Tick to include symbols (#@?$).</p></button>
+                    <button class="btn" id="help-symbols-btn"><i class="fa-solid fa-question"></i>
+                        <p>Tick to include symbols (#,@,?,$).</p>
+                    </button>
                 </div>
+                <h3>Look-alike letters<span> Personal preference</span></h3>
+                <div class="card-input">
+                    <input class="checkbox" id="allow-symbols-checkbox" type="checkbox">
+                    <button class="btn" id="help-symbols-btn"><i class="fa-solid fa-question"></i>
+                        <p>Tick to include look-alike letters (1,l,i,0,o).</p>
+                    </button>
+                </div>
+                <button class="generate-btn" id="generate-btn">Generate</button>
             </div>
 
             <div class="options-r">
 
             </div>
 
+
+        </div>
+        <div class="card-result">
+            <h2>Your ultimate password</h2>
+            <div class="password-container">
+                <p class="password" id="password">D8q2NzP9xV4yL1mB7wK5jR3nC6vF8pT1gH9dZ2xM4bC6vN1pL9kQ3jW8mN2vB4zP</p><i class="fa-solid fa-copy"></i>
+            </div>
+            <p class="copy-p">Click to copy</p>
         </div>
     </div>
 </body>
