@@ -3,3 +3,5 @@ A simple password generator made with JavaScript. This project is currently in v
 
 - responsivity
 - light mode
+
+[Find the website here.](https://zapletaljan.github.io/Password-Generator/)
