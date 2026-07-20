@@ -65,6 +65,7 @@ body {
 
 .copy-p {
     color: transparent;
+    user-select: none;
 }
 
 .password-container {
@@ -95,11 +96,12 @@ body {
     cursor: pointer;
 }
 
-.password-container:hover + .copy-p {
+.password-container:hover+.copy-p {
     color: #fff;
 }
 
 .card-input {
+    position: relative;
     margin-bottom: 20px;
     align-items: center;
     display: flex;
@@ -131,7 +133,7 @@ body {
 
 #password-length-input {
     font-family: Poppins, sans-serif, system-ui;
-    width: fit-content;
+    width: 55px;
     background-color: rgb(255, 255, 255);
     border-radius: 5px;
     border: 1px solid;
@@ -180,10 +182,7 @@ body {
     position: absolute;
 }
 
-#help-length-btn,
-#help-lower-btn,
-#help-upper-btn,
-#help-symbols-btn {
+#help-lookalike-btn {
     width: 25px;
     height: 25px;
 
@@ -196,10 +195,7 @@ body {
     }
 }
 
-#help-length-btn:hover,
-#help-lower-btn:hover,
-#help-upper-btn:hover,
-#help-symbols-btn:hover {
+#help-lookalike-btn:hover {
     min-height: 25px;
     width: fit-content;
     color: #fff;
@@ -213,4 +209,75 @@ body {
     i {
         display: none;
     }
+}
+
+[type="checkbox"] {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 20;
+}
+
+[type="checkbox"]+label {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    padding-left: 31px;
+    line-height: 23px;
+}
+
+[type="checkbox"]+label::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #fff;
+    border-radius: 3px;
+    background: transparent;
+    left: 0;
+    top: 0;
+}
+
+[type="checkbox"]:checked+label::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #5FD25F;
+    border-radius: 3px;
+    left: 0;
+    top: 0;
+}
+
+[type="checkbox"]:checked+label::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #5FD25F;
+    border-radius: 3px;
+    background-image: url(img/check.svg);
+    background-size: contain;
+    left: 0;
+    top: 0;
+    transform: scale(1);
+    transition: all .3s ease;
+    opacity: 1;
+    border-color: transparent;
+}
+
+[type="checkbox"]:not(:checked)+label::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #5FD25F;
+    border-radius: 3px;
+    background-image: url(img/check.svg);
+    background-size: contain;
+    left: 0;
+    top: 0;
+    transform: scale(0);
+    opacity: 0;
 }

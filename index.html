@@ -31,38 +31,41 @@
         <div class="card-options">
 
             <div class="options-l">
-                <h3>Password length <span> Min. 12 recommended</span></h3>
+               
                 <div class="card-input">
+                    
                     <input id="password-length-input" type="number" min="8" max="64" value="12">
-                    <button class="btn" id="help-length-btn"><i class="fa-solid fa-question"></i>
-                        <p>Set the length of your password (8-64).</p>
-                    </button>
+                    <label>Password length</label>
+
                 </div>
-                <h3>Uppercase letters<span> Recommended</span></h3>
+               
                 <div class="card-input">
-                    <input class="checkbox" id="allow-uppercase-checkbox" type="checkbox">
-                    <button class="btn" id="help-upper-btn"><i class="fa-solid fa-question"></i>
-                        <p>Tick to include uppercase letters.</p>
-                    </button>
+                    
+                    <input class="checkbox" id="allow-uppercase-checkbox" type="checkbox" name="checkbox">
+                    <label>Uppercase letters</label>
+
                 </div>
-                <h3>Lowercase letters<span> Recommended</span></h3>
+                
                 <div class="card-input">
-                    <input class="checkbox" id="allow-lowercase-checkbox" type="checkbox">
-                    <button class="btn" id="help-lower-btn"><i class="fa-solid fa-question"></i>
-                        <p>Tick to include lowercase letters.</p>
-                    </button>
+
+                    <input class="checkbox" id="allow-lowercase-checkbox" type="checkbox" name="checkbox">
+                    <label>Lowercase letters</label>
+
                 </div>
-                <h3>Symbols<span> Recommended</span></h3>
+                
                 <div class="card-input">
-                    <input class="checkbox" id="allow-symbols-checkbox" type="checkbox">
-                    <button class="btn" id="help-symbols-btn"><i class="fa-solid fa-question"></i>
-                        <p>Tick to include symbols (#,@,?,$).</p>
-                    </button>
+
+                    <input class="checkbox" id="allow-symbols-checkbox" type="checkbox" name="checkbox">
+                    <label>Symbols</label>
+
                 </div>
-                <h3>Look-alike letters<span> Personal preference</span></h3>
+                
                 <div class="card-input">
-                    <input class="checkbox" id="allow-symbols-checkbox" type="checkbox">
-                    <button class="btn" id="help-symbols-btn"><i class="fa-solid fa-question"></i>
+
+                    <input class="checkbox" id="allow-lookalike-checkbox" type="checkbox" name="checkbox">
+                    <label>Look-alike letters</label>
+
+                    <button class="btn" id="help-lookalike-btn"><i class="fa-solid fa-question"></i>
                         <p>Tick to include look-alike letters (1,l,i,0,o).</p>
                     </button>
                 </div>
