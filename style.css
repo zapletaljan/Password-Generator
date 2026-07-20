@@ -66,6 +66,7 @@ body {
 .copy-p {
     color: transparent;
     user-select: none;
+    transition: all .3s ease;
 }
 
 .password-container {
@@ -79,6 +80,7 @@ body {
     height: fit-content;
     border: 2px dashed;
     border-color: transparent;
+    transition: all .3s ease;
 
     p {
         padding: 5px 10px 5px 10px;
@@ -115,6 +117,10 @@ body {
 }
 
 .options-l {
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
     width: 50%;
     padding-left: 50px;
 
@@ -127,31 +133,46 @@ body {
 }
 
 .options-r {
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
     width: 50%;
     padding-right: 50px;
+    h3 {
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+    p {
+        font-weight: 300;
+    }
 }
 
 #password-length-input {
     font-family: Poppins, sans-serif, system-ui;
     width: 55px;
-    background-color: rgb(255, 255, 255);
+    background-color: #111;
     border-radius: 5px;
-    border: 1px solid;
+    border: 2px solid;
     border-color: gray;
     padding: 5px;
-    color: #000000;
+    color: #ffffff;
 }
 
 .btn {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(19, 19, 19);
+    background-color: #111;
     border-radius: 50px;
-    border: 1px solid;
-    border-color: gray;
+    border: 2px solid gray;
     width: 40px;
     height: 40px;
+    transition: all .2s ease;
+}
+
+.btn:hover {
+    background-color: #222;
 }
 
 .generate-btn {
@@ -161,8 +182,8 @@ body {
     align-items: center;
     border-radius: 5px;
     border: 2px solid;
-    background-color: #0fa3f8;
-    border-color: transparent;
+    background-color: transparent;
+    border-color: #0fa3f8;
     color: #ffffff;
     font-weight: 700;
     font-size: 16px;
@@ -173,7 +194,7 @@ body {
 }
 
 .generate-btn:hover {
-    background-color: rgb(15, 163, 248, 0.8);
+    background-color: #111;
 }
 
 #theme-switch-btn {
@@ -232,11 +253,12 @@ body {
     position: absolute;
     width: 20px;
     height: 20px;
-    border: 2px solid #fff;
+    border: 2px solid gray;
     border-radius: 3px;
     background: transparent;
     left: 0;
     top: 0;
+    background-color: #111;
 }
 
 [type="checkbox"]:checked+label::before {
@@ -248,6 +270,7 @@ body {
     border-radius: 3px;
     left: 0;
     top: 0;
+    background-color: #111;
 }
 
 [type="checkbox"]:checked+label::after {

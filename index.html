@@ -31,48 +31,55 @@
         <div class="card-options">
 
             <div class="options-l">
-               
+
                 <div class="card-input">
-                    
-                    <input id="password-length-input" type="number" min="8" max="64" value="12">
+                    <input id="password-length-input" type="number" min="8" max="64" value="16">
                     <label>Password length</label>
+                    <span>16+ Recommended</span>
 
                 </div>
-               
+
                 <div class="card-input">
-                    
+
                     <input class="checkbox" id="allow-uppercase-checkbox" type="checkbox" name="checkbox">
                     <label>Uppercase letters</label>
+                    <span>Recommended</span>
 
                 </div>
-                
+
                 <div class="card-input">
 
                     <input class="checkbox" id="allow-lowercase-checkbox" type="checkbox" name="checkbox">
                     <label>Lowercase letters</label>
+                    <span>Recommended</span>
 
                 </div>
-                
+
                 <div class="card-input">
 
                     <input class="checkbox" id="allow-symbols-checkbox" type="checkbox" name="checkbox">
                     <label>Symbols</label>
+                    <span>Recommended</span>
 
                 </div>
-                
+
                 <div class="card-input">
 
                     <input class="checkbox" id="allow-lookalike-checkbox" type="checkbox" name="checkbox">
-                    <label>Look-alike letters</label>
-
-                    <button class="btn" id="help-lookalike-btn"><i class="fa-solid fa-question"></i>
-                        <p>Tick to include look-alike letters (1,l,i,0,o).</p>
-                    </button>
+                    <label id="lookalike-lbl">Look-alike characters *</label>
+                    <span>Personal preference</span>
                 </div>
                 <button class="generate-btn" id="generate-btn">Generate</button>
             </div>
 
             <div class="options-r">
+                <h3>What makes a strong password?</h3>
+                <p>A strong password should consist of a wide variety of characters including lowercase and uppercase
+                    letters, numbers and symbols.
+                    Strong passwords should be random and with at least 16 characters.
+                    They should not consist of words or common phrases
+                    and they should be unique to one account.
+                </p>
 
             </div>
 
@@ -81,7 +88,8 @@
         <div class="card-result">
             <h2>Your ultimate password</h2>
             <div class="password-container">
-                <p class="password" id="password">D8q2NzP9xV4yL1mB7wK5jR3nC6vF8pT1gH9dZ2xM4bC6vN1pL9kQ3jW8mN2vB4zP</p><i class="fa-solid fa-copy"></i>
+                <p class="password" id="password">D8q2NzP9xV4yL1mB7wK5jR3nC6vF8pT1gH9dZ2xM4bC6vN1pL9kQ3jW8mN2vB4zP</p><i
+                    class="fa-solid fa-copy"></i>
             </div>
             <p class="copy-p">Click to copy</p>
         </div>

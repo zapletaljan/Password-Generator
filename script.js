@@ -9,3 +9,6 @@ const lowercase = "abcdefghijklmnopqrstuvwxyz";
 const numbers = "0123456789";
 const symbols = "!@#$%^&*()_+-=[]{}|;:,.<>/?";
 const lookalike = /[iIlLoO01!|.,]/g;
+
+
+
